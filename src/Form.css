@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'MarkaziText';
+    src: url('/Users/sakurawang/components/my-app/public/fonts/MarkaziText-VariableFont_wght.ttf') format('truetype'),
+  }
+  
+@font-face {
+    font-family: 'Karla';
+    src: url('/Users/sakurawang/components/my-app/public/fonts/Karla-VariableFont_wght.ttf') format('truetype'),
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #reservation-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #f4ce14 ;
+    border-radius: 10px;
+    background-color:#f4ce14 ;
+    width: 500px;
+    height: auto;
+    margin: 0px;
+    font-size: 20px;
+    font-family: "Karla";
+    gap: 20px;
+  }
+
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    flex: 1;
+  }
+  
+  input[type="date"],
+  input[type="number"],
+  select {
+    flex: 2;
+    margin-left: 10px; /* 调整间距 */
+  }
+
+  input[type="submit"] {
+    display: flex;
+    justify-content: center;
+    background-color: #495e57;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+  }
+  
+  input[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  h4{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'MarkaziText';
+    font-size: 40px;
+    color: #495e57
+  }
+
+  .confirm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .confirm h5 {
+    font-family: 'MarkaziText';
+    font-size: 45px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .confirm p {
+    font-family: 'Karla';
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  
+  .confirm img {
+    width: 200px;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 20px; /* Add margin to create space between elements */
+  }
+  

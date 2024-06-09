@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'MarkaziText';
+  src: url('/Users/sakurawang/components/my-app/public/fonts/MarkaziText-VariableFont_wght.ttf') format('truetype'),
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Karla';
+  src: url('/Users/sakurawang/components/my-app/public/fonts/Karla-VariableFont_wght.ttf') format('truetype'),
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  width: 300px; /* Set the desired width of the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-top: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: end;
+  margin-right: 20px;
+  margin-top: 0px;
+
+}
+
+.Navlist {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.Navitem {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.Navitem a {
+  color: rgb(0, 0, 0);
+  font-family: 'Karla';
+  text-decoration: none;
+}
+
+.main {
+  display: grid; /* Use CSS grid */
+  grid-template-columns: 2fr 1fr; /* Create two columns where the first column takes up twice as much space as the second column */
+  gap: 80px; /* Add some gap between columns */
+  margin-top: 60px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.main .text-content {
+  grid-column: span 2; /* Span the text content across two columns */
+}
+
+.main img {
+  max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.main h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 50px;
+  font-family: 'MarkaziText';
+}
+
+.main h2 {
+  margin-top: 0px;
+  font-size: 25;
+  font-family: 'Karla';
+}
+
+.main p {
+  font-size: 18px;
+  text-align:justify;
+  font-family: 'Karla';
+  margin-bottom: 60px;
+}
+
+.main button {
+  margin-top: 0px;
+  background-color: #EE9972 ;
+  border-radius: 30px;
+  width: 250px;
+  height: 60px;
   color: white;
+  border: none;
+  font-size: 30px;
+  font-family: 'MarkaziText';
 }
 
-.App-link {
-  color: #61dafb;
+.main button:hover {
+  background-color: #495e57;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.foot img {
+  width: 200px;
+  height: auto;
+  margin-top: 50px;
+
 }
